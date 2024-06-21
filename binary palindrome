@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n;
+        int rem,temp,reverse=0;
+        n=s.nextInt();
+        temp=n;
+      while(n>0)
+      {
+          rem=n%2;
+          n=n/2;
+          reverse=(reverse*2)+rem;
+      }
+      if(temp == reverse) {
+         System.out.println("yes");
+      }else {
+         System.out.println("no");
+      }
+   }
+}
