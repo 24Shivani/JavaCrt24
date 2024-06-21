@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    
+public static void main(String[] args) {
+Scanner s = new Scanner(System.in);
+    long n1,n2;
+n1 = s.nextLong();
+n2 = s.nextLong();
+    if(n1>n2){
+        System.out.printf("%d",n1);
+        }
+    else{
+        System.out.printf("%d",n2);
+    }    
+}
+}
