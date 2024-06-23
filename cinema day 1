@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int D,M,Y,S;
+    D=s.nextInt();
+        M=s.nextInt();
+        Y=s.nextInt();
+        S=s.nextInt();
+    if(S>50&&S<100)
+    {
+       System.out.println("Cinema Day");
+    }
+    else{
+        System.out.println("Not a Cinema Day");
+    }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
