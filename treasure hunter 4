@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s= new Scanner(System.in);
+        int a,b,c;
+    a=s.nextInt();
+        b=s.nextInt();
+        c=s.nextInt();
+    int r1=(a*b)/100;
+   System.out.printf("%d\n",r1);
+    int r=a-r1;
+    int r2=(r*c)/100;
+   System.out.printf("%d\n",r2);
+    int r3=(r-r2)/3;
+     System.out.printf("%d",r3);
+    
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
