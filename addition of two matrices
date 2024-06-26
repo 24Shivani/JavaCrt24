@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);        
+        int n= scanner.nextInt();      
+        int m= scanner.nextInt();
+        int[][] A = new int[n][m];
+        int[][] B = new int[n][m];   
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                A[i][j] = scanner.nextInt();
+            }
+        }        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                B[i][j] = scanner.nextInt();
+            }
+        }
+        int[][] c = addMatrices(A, B);
+        printMatrix(c);
+    }
+    public static int[][] addMatrices(int[][] A, int[][] B) {
+        int n = A.length;
+        int m = A[0].length;
+        int[][] c = new int[n][m];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                c[i][j] = A[i][j] + B[i][j];
+}
+        }
+        return c;
+    }
+    public static void printMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
